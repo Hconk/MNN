@@ -142,6 +142,11 @@ private:
     bool mNeedResize       = false;
     bool mValid            = true;
     Backend* mFirstBackend = nullptr;
+
+	Session(const Session&) = delete;
+	Session(const Session&&) = delete;
+	Session& operator=(const Session&) = delete;
+	Session& operator=(const Session&&) = delete;
 };
 } // namespace MNN
 
